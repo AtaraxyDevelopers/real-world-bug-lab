@@ -12,3 +12,7 @@ Use Node.js 22 or 24. Browser and container projects document additional checks
 in their README. Changes must pass CI on the supported platforms. Never commit
 credentials, production logs, or customer records. Contributions are under MIT.
 Maintainers review contributions as time permits; no response deadline is promised.
+
+For a new lesson, add an immutable original sample under `fixtures/original-bugs`,
+a learner file, a reference solution, and cases that demonstrate the bug. Learners
+should edit only their exercise file; do not update the baseline when solving it.

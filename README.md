@@ -9,7 +9,11 @@ An open-source project from [Ataraxy Developers](https://github.com/AtaraxyDevel
 
 ## Quick start
 
-Requires Node.js 22 or 24 and npm. Git is optional if you download the source ZIP.
+Install [Node.js](https://nodejs.org/en/download) 22 or 24 (npm is included). Check
+`node --version` and `npm --version` in your terminal. The commands below run from
+this repository's root folder, the one containing `package.json`.
+
+**With Git:**
 
 ```sh
 git clone https://github.com/AtaraxyDevelopers/real-world-bug-lab.git
@@ -17,6 +21,15 @@ cd real-world-bug-lab
 npm ci
 npm test
 ```
+
+**Without Git:** choose **Code → Download ZIP** on GitHub, extract the archive,
+and open a terminal in the extracted `real-world-bug-lab-main` folder (release archives may
+include the version in the folder name). Run `npm ci` and `npm test` there.
+Use the **source-code ZIP**, not an npm `.tgz` package, to follow this developer walkthrough.
+The install step may need internet access; the examples run locally afterward.
+
+On Windows PowerShell, if `npm.ps1` is blocked by execution policy, use `npm.cmd`
+in place of `npm` in these commands. No execution-policy change is required.
 
 Choose an exercise and reproduce its bug:
 
@@ -28,9 +41,9 @@ npm run solutions
 
 The first command **intentionally exits with code 1** until you repair the exercise.
 Edit the selected `exercises/01/bug.mjs` and run it again. The normal `npm test`
-suite checks both that the reference solutions pass and that the original bugs are
-reproducible. After solving an exercise, that exercise's intentional-bug test will
-fail by design; use the exercise runner to check your work.
+suite checks reference solutions and immutable original bug samples in `fixtures/original-bugs`.
+Your edits to `exercises/01/bug.mjs` do not break that suite. Use the exercise runner
+to check your solution; it checks both the result and the promise not to mutate inputs.
 
 ## Lessons
 
@@ -58,6 +71,10 @@ These are focused modules, not full applications. The money lesson accepts only
 nonnegative prices with at most two decimal places; real financial systems need a
 documented rounding policy and decimal or integer-based storage. Event deduplication
 is in memory and not a distributed exactly-once guarantee.
+
+## Expected first run
+
+The repository tests pass on a fresh checkout. An unsolved exercise deliberately exits with status 1; `--solution` and `npm run solutions` pass.
 
 ## Contributing and support
 

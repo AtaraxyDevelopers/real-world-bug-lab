@@ -36,7 +36,9 @@ if (!id || id === '--help') {
     console.log('\n' + item.id + ' ' + item.title);
     for (const [i, c] of cases.entries())
       try {
-        assert.deepEqual(await fn(...structuredClone(c.args)), c.expected);
+        const args = structuredClone(c.args);
+        assert.deepEqual(await fn(...args), c.expected);
+        assert.deepEqual(args, c.args, 'Do not mutate the input arguments');
         console.log('PASS case ' + (i + 1));
       } catch (e) {
         console.log('FAIL case ' + (i + 1) + ': ' + e.message);

@@ -20,7 +20,7 @@ for (const item of catalog) {
     }
   });
   test(item.id + ' reproduces the intentional bug', async () => {
-    const bug = (await import('../exercises/' + item.id + '/bug.mjs')).default;
+    const bug = (await import('../fixtures/original-bugs/' + item.id + '.mjs')).default;
     const cases = JSON.parse(
       await fs.readFile(
         new URL('../exercises/' + item.id + '/cases.json', import.meta.url),

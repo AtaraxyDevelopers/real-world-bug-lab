@@ -1,6 +1,6 @@
 {
   "name": "@ataraxydevelopers/real-world-bug-lab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ten runnable debugging exercises with regression tests, hints, and solutions.",
   "type": "module",
   "engines": {
