@@ -1,0 +1,6 @@
+[
+  {
+    "args": [["constructor", "constructor", "__proto__", "a"]],
+    "expected": [2, 2, 1, 1]
+  }
+]

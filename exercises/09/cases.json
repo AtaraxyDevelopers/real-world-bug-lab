@@ -1,0 +1,14 @@
+[
+  {
+    "args": ["👩‍💻"],
+    "expected": 1
+  },
+  {
+    "args": ["é"],
+    "expected": 1
+  },
+  {
+    "args": ["hello"],
+    "expected": 5
+  }
+]

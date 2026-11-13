@@ -1,0 +1,23 @@
+{
+  "name": "@ataraxydevelopers/real-world-bug-lab",
+  "version": "0.1.0",
+  "description": "Ten runnable debugging exercises with regression tests, hints, and solutions.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Ataraxy Developers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtaraxyDevelopers/real-world-bug-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AtaraxyDevelopers/real-world-bug-lab/issues"
+  },
+  "scripts": {
+    "test": "node --test",
+    "exercise": "node src/run.mjs",
+    "solutions": "node src/run.mjs all --solution"
+  }
+}

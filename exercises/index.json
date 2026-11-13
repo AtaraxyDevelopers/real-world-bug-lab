@@ -1,0 +1,62 @@
+[
+  {
+    "id": "01",
+    "title": "Numeric sorting",
+    "goal": "Sort prices numerically without changing the source array.",
+    "hint": "The default sort compares text. Does sorting mutate its input?"
+  },
+  {
+    "id": "02",
+    "title": "UTC calendar dates",
+    "goal": "Return the YYYY-MM-DD UTC date for an ISO timestamp.",
+    "hint": "The input offset may cross a UTC calendar boundary."
+  },
+  {
+    "id": "03",
+    "title": "Empty averages",
+    "goal": "Average a list of finite measurements; an empty list returns null.",
+    "hint": "What should division by zero mean to the caller?"
+  },
+  {
+    "id": "04",
+    "title": "Money totals",
+    "goal": "Add nonnegative decimal prices with at most two decimal places and return integer cents.",
+    "hint": "Convert each price to integer cents before summing."
+  },
+  {
+    "id": "05",
+    "title": "Required fields",
+    "goal": "Validate a nonempty string email field without throwing for null or wrong types.",
+    "hint": "Validate the container and field type before calling string methods."
+  },
+  {
+    "id": "06",
+    "title": "Awaiting collections",
+    "goal": "Return an array of resolved doubled values.",
+    "hint": "Awaiting an array does not await the promises inside it."
+  },
+  {
+    "id": "07",
+    "title": "Duplicate events",
+    "goal": "Sum amounts once per event ID, preserving the first occurrence.",
+    "hint": "Keep the IDs you have already processed."
+  },
+  {
+    "id": "08",
+    "title": "Dictionary keys",
+    "goal": "Count arbitrary string keys safely, including names inherited by ordinary objects.",
+    "hint": "Consider Map instead of a plain object for user-supplied keys."
+  },
+  {
+    "id": "09",
+    "title": "Visible characters",
+    "goal": "Count user-perceived grapheme clusters, including emoji and combining marks.",
+    "hint": "String length counts UTF-16 code units."
+  },
+  {
+    "id": "10",
+    "title": "Pagination boundaries",
+    "goal": "Return a 1-based page using a positive page size.",
+    "hint": "Array offsets begin at zero; pages in this contract begin at one."
+  }
+]

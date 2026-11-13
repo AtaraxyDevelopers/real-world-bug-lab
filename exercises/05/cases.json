@@ -1,0 +1,22 @@
+[
+  {
+    "args": [null],
+    "expected": false
+  },
+  {
+    "args": [
+      {
+        "email": 5
+      }
+    ],
+    "expected": false
+  },
+  {
+    "args": [
+      {
+        "email": "a@example.test"
+      }
+    ],
+    "expected": true
+  }
+]
