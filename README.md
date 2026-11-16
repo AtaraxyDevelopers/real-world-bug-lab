@@ -1,3 +1,5 @@
+<p><a href="https://ataraxydevelopers.com"><img src="docs/brand/ataraxy-developers-logo.png" alt="Ataraxy Developers — Turning Digital Visions Into Reality" width="520"></a></p>
+
 # Real-World Bug Lab
 
 [![CI](https://github.com/AtaraxyDevelopers/real-world-bug-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/AtaraxyDevelopers/real-world-bug-lab/actions/workflows/ci.yml)
